@@ -101,7 +101,7 @@ export default function Home() {
             <div className="relative bg-card/50 backdrop-blur-sm border border-border rounded-3xl shadow-xl overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 to-blue-500"></div>
               <Image
-                src="/placeholder.svg"
+                src="/images/pexels-pixabay-40568 (1).jpg"
                 alt="MediFlow Dashboard"
                 width={700}
                 height={350}
@@ -202,7 +202,7 @@ export default function Home() {
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl shadow-lg overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 to-blue-500"></div>
                 <Image
-                  src="/placeholder.svg"
+                  src="/images/WhatsApp Image 2025-04-27 at 6.05.03 PM.jpeg"
                   alt="MediFlow Platform"
                   width={700}
                   height={350}
@@ -336,7 +336,7 @@ export default function Home() {
                 <div className="w-80 h-80 bg-card rounded-2xl shadow-xl border border-border flex items-center justify-center p-6 relative">
                   <div className="absolute inset-0 bg-grid-pattern-light dark:bg-grid-pattern-dark opacity-5 rounded-2xl"></div>
                   <Image
-                    src="/placeholder.svg"
+                    src="/images/WhatsApp Image 2025-04-27 at 6.05.03 PM (1).jpeg"
                     alt="FHIR Conversion Illustration"
                     width={700}
                     height={350}
