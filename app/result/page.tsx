@@ -11,67 +11,197 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 // Sample FHIR JSON data for demonstration
 const sampleFhirJson = {
-  resourceType: "Patient",
-  id: "example",
-  meta: {
-    versionId: "1",
-    lastUpdated: "2023-10-25T12:00:00Z",
-  },
-  text: {
-    status: "generated",
-    div: '<div xmlns="http://www.w3.org/1999/xhtml">John Smith</div>',
-  },
-  identifier: [
-    {
-      use: "usual",
-      type: {
-        coding: [
-          {
-            system: "http://terminology.hl7.org/CodeSystem/v2-0203",
-            code: "MR",
-            display: "Medical Record Number",
-          },
-        ],
-        text: "Medical Record Number",
+    "resourceType": "Patient",
+    "id": "p12345",
+    "meta": {
+      "versionId": "2",
+      "lastUpdated": "2025-04-26T14:30:00Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">John Samuel Smith, born December 25, 1974</div>"
+    },
+    "identifier": [
+      {
+        "use": "official",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical Record Number"
+            }
+          ],
+          "text": "Medical Record Number"
+        },
+        "system": "http://hospital.example.org",
+        "value": "12345"
       },
-      system: "http://hospital.example.org",
-      value: "12345",
+      {
+        "use": "secondary",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "SS",
+              "display": "Social Security Number"
+            }
+          ],
+          "text": "Social Security Number"
+        },
+        "system": "http://example.com/social-security",
+        "value": "987-65-4321"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "use": "official",
+        "family": "Smith",
+        "given": [
+          "John",
+          "Samuel"
+        ],
+        "prefix": [
+          "Mr."
+        ]
+      },
+      {
+        "use": "nickname",
+        "given": [
+          "Johnny"
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "555-123-4567",
+        "use": "home"
+      },
+      {
+        "system": "phone",
+        "value": "555-765-4321",
+        "use": "work"
+      },
+      {
+        "system": "email",
+        "value": "john.smith@example.com",
+        "use": "work"
+      },
+      {
+        "system": "email",
+        "value": "johnny.smith@home.com",
+        "use": "home"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1974-12-25",
+    "deceasedBoolean": false,
+    "address": [
+      {
+        "use": "home",
+        "type": "physical",
+        "line": [
+          "123 Main St"
+        ],
+        "city": "Anytown",
+        "state": "CA",
+        "postalCode": "12345",
+        "country": "USA"
+      },
+      {
+        "use": "temporary",
+        "type": "physical",
+        "line": [
+          "456 Elm St"
+        ],
+        "city": "Othertown",
+        "state": "CA",
+        "postalCode": "67890",
+        "country": "USA"
+      }
+    ],
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married"
+        }
+      ],
+      "text": "Married"
     },
-  ],
-  active: true,
-  name: [
-    {
-      use: "official",
-      family: "Smith",
-      given: ["John", "Samuel"],
-    },
-  ],
-  telecom: [
-    {
-      system: "phone",
-      value: "555-123-4567",
-      use: "home",
-    },
-    {
-      system: "email",
-      value: "john.smith@example.com",
-      use: "work",
-    },
-  ],
-  gender: "male",
-  birthDate: "1974-12-25",
-  address: [
-    {
-      use: "home",
-      type: "physical",
-      line: ["123 Main St"],
-      city: "Anytown",
-      state: "CA",
-      postalCode: "12345",
-      country: "USA",
-    },
-  ],
-}
+    "multipleBirthBoolean": false,
+    "photo": [
+      {
+        "contentType": "image/jpeg",
+        "url": "http://example.com/patient-photos/john_smith.jpg"
+      }
+    ],
+    "communication": [
+      {
+        "language": {
+          "coding": [
+            {
+              "system": "urn:ietf:bcp:47",
+              "code": "en",
+              "display": "English"
+            }
+          ],
+          "text": "English"
+        },
+        "preferred": true
+      }
+    ],
+    "contact": [
+      {
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "N",
+                "display": "Emergency Contact"
+              }
+            ],
+            "text": "Spouse"
+          }
+        ],
+        "name": {
+          "family": "Smith",
+          "given": ["Jane"]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-987-6543",
+            "use": "home"
+          }
+        ],
+        "address": {
+          "line": [
+            "123 Main St"
+          ],
+          "city": "Anytown",
+          "state": "CA",
+          "postalCode": "12345",
+          "country": "USA"
+        }
+      }
+    ],
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/1",
+        "display": "Dr. Alice Williams"
+      }
+    ],
+    "managingOrganization": {
+      "reference": "Organization/1",
+      "display": "Anytown Medical Center"
+    }
+  }
+  
 
 export default function ResultsPage() {
   const [copied, setCopied] = useState(false)
