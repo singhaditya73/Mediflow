@@ -45,7 +45,7 @@ export default function Home() {
         <main className="py-12">
           <section className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-1.5 bg-gradient-to-r from-teal-500/10 to-blue-500/10 dark:from-teal-500/20 dark:to-blue-500/20 rounded-full text-sm font-medium text-teal-600 dark:text-teal-400 border border-teal-500/20 dark:border-teal-400/20">
-              Transforming Healthcare Data Management
+              Secure. Unified. Patient-Owned.
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 tracking-tight">
               Clinical Data{" "}
