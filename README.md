@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mediflow 🏥
+⸻
+### Mediflow transforms healthcare data management by giving patients full ownership of their medical records through a secure, decentralized platform.We standardize scattered, bulky physical records into the FHIR format, store them safely using IPFS and Blockchain, and enable easy identity linking with Aadhaar for verified health profiles.
+⸻
 
-## Getting Started
+## Key Features
+	•	🩺 FHIR Integration: Converts unstructured medical prescriptions and documents into standardized FHIR resources.
+	•	🔗 Web3 & Blockchain: Ensures secure, tamper-proof access and an immutable audit trail for all medical data.
+	•	📂 Decentralized Storage (IPFS): Guarantees high availability, resilience, and privacy for patient data.
+	•	🛡️ Smart Contracts: Automates and secures access permissions — patients can easily grant or revoke access.
+	•	🧠 Machine Learning + NLP: Extracts structured information from scanned prescriptions and documents.
+	•	🆔 Aadhaar Linking: Creates a unique, verifiable health identity for each patient.
+	•	🔒 Advanced Encryption: End-to-end encryption of all medical data, compliant with HIPAA and global privacy laws.
 
-First, run the development server:
+![2](https://github.com/user-attachments/assets/c4245b9f-a341-4762-bbb3-dbba158a3e4c)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+⸻
+## How it Works
+	1.	Upload Medical Records
+	•	Patients upload prescriptions or lab reports via the platform.
+	2.	AI-Based Processing
+	•	Machine Learning + NLP models extract and organize text into FHIR-compliant structures.
+	3.	FHIR Resource Creation
+	•	The extracted data is converted into standardized FHIR DiagnosticReport or Patient resources.
+	4.	Decentralized Storage
+	•	FHIR resources are stored securely on IPFS, ensuring distributed, tamper-proof storage.
+	5.	Blockchain Access Control
+	•	Access rights are managed through blockchain smart contracts, with full control given to the patient.
+	6.	Identity Linking
+	•	Patients can link their FHIR identity to their Aadhaar number for seamless verification.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⸻
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack 🛠️
+	•	Machine Learning: Python, Tesseract OCR, NLP models
+	•	Backend: Node.js / Express
+	•	Blockchain: Solidity (Ethereum / Polygon / any EVM chain)
+	•	Storage: IPFS
+	•	FHIR Standard: JSON structures
+	•	Frontend: React.js / Next.js (Vercel hosting)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
+This project is licensed under the MIT License.
+Feel free to use, contribute, and share!
 
-To learn more about Next.js, take a look at the following resources:
+⸻
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributors ✨
+	•	Abhishek Jain 
+	•	Aditya Singh
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+⸻
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Let’s Mediflow — Where Patients Own Their Health! 🌐🩺
