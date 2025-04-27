@@ -171,7 +171,7 @@ export default function UploadPage() {
                   asChild
                   className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white border-0"
                 >
-                  <Link href="/signup">Convert to FHIR</Link>
+                  <Link href="/result">Convert to FHIR</Link>
                 </Button>
               </div>
             </CardContent>
