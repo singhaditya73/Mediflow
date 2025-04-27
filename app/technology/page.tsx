@@ -1,5 +1,4 @@
 "use client"
-
 import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { ArrowLeft, Database, FileText, Lock, Network, Shield, Zap } from "lucide-react"
