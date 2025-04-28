@@ -14,6 +14,9 @@
 
 ![2](https://github.com/user-attachments/assets/c4245b9f-a341-4762-bbb3-dbba158a3e4c)
 
+[Mediflow.pdf](https://github.com/user-attachments/files/19937312/Mediflow.pdf)
+
+
 ⸻
 ## How it Works
 	1.	Upload Medical Records
